@@ -1,0 +1,11 @@
+https://app.roboflow.com/arraws-eh2wg/arrows_obj_det/4 
+
+
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="ngL8Hnwlwhib72kX4Bal")
+project = rf.workspace("arraws-eh2wg").project("arrows_obj_det")
+version = project.version(4)
+dataset = version.download("yolov8")
+                

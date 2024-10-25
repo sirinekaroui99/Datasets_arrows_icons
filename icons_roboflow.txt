@@ -1,0 +1,12 @@
+https://app.roboflow.com/icons-wrs49/icons-vbuao/2 
+
+
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="Y7eGh9C3qlfH3FWGAcy6")
+project = rf.workspace("icons-wrs49").project("icons-vbuao")
+version = project.version(2)
+dataset = version.download("yolov8")
+                
+
